@@ -7,6 +7,7 @@ const { Types, Creators } = createActions({
     helpOrdersRequest: ['id'],
     helpOrdersSuccess: ['orders'],
     helpOrderRequest: ['id'],
+    postHelpOrderRequest: ['id', 'question', 'navigation'],
 });
 
 export const HelpOrderTypes = Types;

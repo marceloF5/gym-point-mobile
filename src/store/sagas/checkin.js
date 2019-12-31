@@ -27,10 +27,10 @@ export function* checkinsRequest({ id }) {
         const { toast } = data;
         const { title, message } = toast;
 
-        // Alert.alert(
-        //     title || defaultMessageError.title,
-        //     message || defaultMessageError.message
-        // );
+        Alert.alert(
+            title || defaultMessageError.title,
+            message || defaultMessageError.message
+        );
     }
 }
 

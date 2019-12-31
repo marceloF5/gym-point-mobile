@@ -24,6 +24,7 @@ export default function HelpOrders({ navigation }) {
     const helpOrders = useSelector(state => state.helpOrder.orders);
 
     function loadHelpOrders() {
+        console.tron.log('oi');
         dispatch(HelpOrderActions.helpOrdersRequest(student.id));
     }
 
@@ -60,7 +61,7 @@ export default function HelpOrders({ navigation }) {
                                     <SAnswered>Answered</SAnswered>
                                 ) : (
                                     <SAnswered disabled>
-                                        No answer yet
+                                        Not answer yet
                                     </SAnswered>
                                 )}
                                 <SHelpOrderTime>{item.time}</SHelpOrderTime>
